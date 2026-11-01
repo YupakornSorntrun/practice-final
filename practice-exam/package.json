@@ -1,0 +1,27 @@
+{
+  "name": "practice-exam",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ชุดฝึกข้อสอบปฏิบัติ (จำลอง) ระบบสั่งอาหารออนไลน์ - 88736065",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node scripts/seed.js",
+    "test": "jest --runInBand",
+    "test:1": "jest --runInBand tests/task1.test.js",
+    "test:2": "jest --runInBand tests/task2.test.js",
+    "test:3": "jest --runInBand tests/task3.test.js"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": ["/node_modules/", "/solution/"]
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql2": "^3.11.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
